@@ -15,7 +15,7 @@ Content-Type: application/json
 {
   "sender": "999",
   "recipient": "100",
-  "message": "Hi, go to http://google.com good site"
+  "message": "Hi, go to https://google.com good site"
 }
 
 ### TEST 3: Phishing atack (For number 100)

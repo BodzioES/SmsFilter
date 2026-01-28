@@ -1,6 +1,6 @@
 package com.smsprotocol.demo.controller;
 
-import com.smsprotocol.demo.SmsService;
+import com.smsprotocol.demo.service.SmsService;
 import com.smsprotocol.demo.models.DataSms;
 import org.springframework.web.bind.annotation.*;
 

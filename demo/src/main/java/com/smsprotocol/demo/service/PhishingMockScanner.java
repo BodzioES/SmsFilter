@@ -1,10 +1,10 @@
-package com.smsprotocol.demo;
+package com.smsprotocol.demo.service;
 
 import com.smsprotocol.demo.models.ConfidenceLevel;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PhishingMockScanner extends PhishingScanner {
+public class PhishingMockScanner implements PhishingScanner {
 
     @Override
     public boolean isSafe(String url){

@@ -1,4 +1,4 @@
-package com.smsprotocol.demo;
+package com.smsprotocol.demo.service;
 
 import com.smsprotocol.demo.models.DataSms;
 import com.smsprotocol.demo.models.SubscriptionRepository;
