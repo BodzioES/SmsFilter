@@ -1,0 +1,60 @@
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+Content-Length: 109
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "sender": "666",
+  "recipient": "200",
+  "message": "Same scam: https://www.m-bonk.pl.ng/personal-data"
+}
+
+###
+
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "sender": "666",
+  "recipient": "100",
+  "message": "Your account has been blocked, go to https://www.m-bonk.pl.ng/personal-data"
+}
+
+###
+
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+Content-Length: 98
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "sender": "999",
+  "recipient": "100",
+  "message": "Hi, go to https://google.com good site"
+}
+
+###
+
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+Content-Length: 68
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "sender": "100",
+  "recipient": "SYSTEM",
+  "message": "START"
+}
+
+###
+
