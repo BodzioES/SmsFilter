@@ -1,0 +1,39 @@
+### TEST 1: Save the user  (Number 100)
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+
+{
+  "sender": "100",
+  "recipient": "SYSTEM",
+  "message": "START"
+}
+
+### TEST 2: Check the secure link (For number 100)
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+
+{
+  "sender": "999",
+  "recipient": "100",
+  "message": "Hi, go to https://google.com good site"
+}
+
+### TEST 3: Phishing atack (For number 100)
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+
+{
+  "sender": "666",
+  "recipient": "100",
+  "message": "Your account has been blocked, go to https://www.m-bonk.pl.ng/personal-data"
+}
+
+### TEST 4: Checking someone who is not registered (Number 200 - nothing send)
+POST http://localhost:8080/api/v1/sms
+Content-Type: application/json
+
+{
+  "sender": "666",
+  "recipient": "200",
+  "message": "Same scam: https://www.m-bonk.pl.ng/personal-data"
+}
