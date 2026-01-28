@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v1/sms")
 public class SmsController {
+
+    // Receiving data about sms messages sent to the internet in JSON format
+    // and immediately forwarding them to the service dor analysis in terms of phishing
+
+
     private final SmsService smsService;
 
     public SmsController(SmsService smsService) {

@@ -7,6 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
 public class SubscriberList implements SubscriptionRepository {
+
+    //  Class that checks the list of protected contacts and methods
+    //  that add and remove from the protected list
+
     private final Set<String> protectedNumbers = ConcurrentHashMap.newKeySet();
 
     @Override

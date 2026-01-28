@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class PhishingMockScanner implements PhishingScanner {
 
+    //  Function that checks whether a given link i a threat or not
+
     @Override
     public boolean isSafe(String url){
         System.out.println("I check the link on Google: " + url);

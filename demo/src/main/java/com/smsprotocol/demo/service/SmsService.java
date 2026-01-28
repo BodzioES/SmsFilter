@@ -22,18 +22,21 @@ public class SmsService {
         String message = sms.message().trim();
         String sender = sms.sender();
 
+        //  Checking whether the user has entered the START message, if yes, it adds him to the mail
         if ("START".equalsIgnoreCase(message)){
             subscriptionRepository.add(sender);
             System.out.println("Saved number: " + sender);
             return;
         }
 
+        //  Checking whether the user has entered the STOP message, if yes, it remove him to the mail
         if ("STOP".equalsIgnoreCase(message)){
             subscriptionRepository.remove(sender);
             System.out.println("Removed number: " + sender);
             return;
         }
 
+        //  If the user is protected, it scans for links
         if (subscriptionRepository.isProtected(sms.recipient())){
             System.out.println("Starting link scanning");
 
@@ -50,6 +53,7 @@ public class SmsService {
         System.out.println("SMS forwarded to the recipient " + sms.recipient());
     }
 
+    //  Function that searches for a link in the text
     public String extractUrl(String text){
         Pattern pattern = Pattern.compile("https?://\\S+");
         Matcher matcher = pattern.matcher(text);
